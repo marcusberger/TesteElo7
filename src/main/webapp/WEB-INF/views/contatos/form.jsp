@@ -10,16 +10,12 @@
 
 	<form action= "/testeElo7/contatos" method="POST">
 		<div>
-			<label>Titulo</label>
-			<input type='text' name="titulo"/>
+			<label>Nome</label>
+			<input type='text' name="nome"/>
 		</div>
 		<div>
-			<label>Descrição</label>
-			<textarea rows="10" cols="20" name="descricao"></textarea>
-		</div>
-		<div>
-			<label>Páginas</label>
-			<input type="text" name="paginas">
+			<label>e-mail</label>
+			<input type='text' name="email"></textarea>
 		</div>
 		<button type="submit">Cadastrar</button>
 	</form>
