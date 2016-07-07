@@ -3,6 +3,8 @@ package br.com.testeElo7.agenda.models;
 public class Contato {
 	
 	private String nome;
+	private String email;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -15,7 +17,7 @@ public class Contato {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	private String email;
+
 	@Override
 	public String toString() {
 		return "Contato [nome=" + nome + ", email=" + email + "]";
