@@ -1,5 +1,7 @@
 package br.com.testeElo7.agenda.daos;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -18,6 +20,11 @@ public class ContatoDAO {
 	public void gravar(Contato contato){
 		manager.persist(contato);
 		
+	}
+
+	public List<Contato> listar() {
+		return manager.createQuery("select p from Contato p", Contato.class)
+				.getResultList();
 	}
 
 }
