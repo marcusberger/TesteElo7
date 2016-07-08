@@ -11,6 +11,8 @@
 
 	<h1>Lista de Contatos</h1>
 	
+	<div>${sucesso }</div>
+	
 	<table>
 		<tr>
 			<td>Nome</td>
