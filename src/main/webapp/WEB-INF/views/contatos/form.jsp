@@ -15,7 +15,7 @@
 		</div>
 		<div>
 			<label>e-mail</label>
-			<input type='text' name="email"></textarea>
+			<input type='text' name="email"/>
 		</div>
 		<button type="submit">Cadastrar</button>
 	</form>
