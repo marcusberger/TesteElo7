@@ -20,7 +20,7 @@ import javax.validation.Valid;
 
 
 @Controller
-@RequestMapping("contatos")
+@RequestMapping("/contatos")
 public class ContatosController {
 	
 	@Autowired
@@ -31,7 +31,7 @@ public class ContatosController {
 		binder.addValidators(new ContatoValidation());
 	}
 	
-	@RequestMapping("/form")
+	@RequestMapping("form")
 	public  ModelAndView form(){
 		ModelAndView modelAndView = new ModelAndView("contatos/form");
 		
