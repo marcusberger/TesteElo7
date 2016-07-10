@@ -1,9 +1,11 @@
 package br.com.testeElo7.agenda.models;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 @Entity
 public class Contato {
@@ -32,6 +34,7 @@ public class Contato {
 	public void setId(int id) {
 		this.id = id;
 	}
+	
 	@Override
 	public String toString() {
 		return "Contato [nome=" + nome + ", email=" + email + "]";

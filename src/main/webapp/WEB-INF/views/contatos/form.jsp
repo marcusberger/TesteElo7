@@ -14,12 +14,12 @@
 	<form:form action= "${s:mvcUrl('CC#gravar').build()}" method="POST" commandName="contato">
 		<div>
 			<label>Nome</label>
-			<input type='text' name="nome"/>
+			<form:input path="nome"/>
 			<form:errors path="nome"/>
 		</div>
 		<div>
 			<label>e-mail</label>
-			<input type='text' name="email"/>
+			<form:input path="email"/>
 			<form:errors path="email"/>
 		</div>
 		<button type="submit">Cadastrar</button>

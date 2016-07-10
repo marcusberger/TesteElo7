@@ -32,7 +32,7 @@ public class ContatosController {
 	}
 	
 	@RequestMapping("form")
-	public  ModelAndView form(){
+	public  ModelAndView form(Contato contato){
 		ModelAndView modelAndView = new ModelAndView("contatos/form");
 		
 		return modelAndView;
@@ -42,7 +42,7 @@ public class ContatosController {
 	public ModelAndView gravar(@Valid Contato contato, BindingResult result, RedirectAttributes redirectAttributes){
 		
 		if (result.hasErrors()){
-			return form();
+			return form(contato);
 		}
 		
 		contatoDao.gravar(contato);
