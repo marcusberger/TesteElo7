@@ -4,14 +4,17 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import br.com.testeElo7.agenda.controllers.HomeController;
 import br.com.testeElo7.agenda.daos.ContatoDAO;
+import br.com.testeElo7.agenda.infra.FileSaver;
 
 @EnableWebMvc
-@ComponentScan(basePackageClasses={HomeController.class,ContatoDAO.class})
+@ComponentScan(basePackageClasses={HomeController.class, ContatoDAO.class, FileSaver.class})
 public class AppWebConfiguration {
 	
 	@Bean
@@ -32,6 +35,11 @@ public class AppWebConfiguration {
 		
 		return messageSource;
 		
+	}
+	
+	@Bean
+	public MultipartResolver multipartResolver(){
+		return new StandardServletMultipartResolver();
 	}
 	
 

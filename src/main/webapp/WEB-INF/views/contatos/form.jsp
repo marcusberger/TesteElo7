@@ -11,7 +11,8 @@
 <title>Agenda</title>
 </head>
 <body>
-	<form:form action= "${s:mvcUrl('CC#gravar').build()}" method="POST" commandName="contato">
+	<form:form action= "${s:mvcUrl('CC#gravar').build()}" method="POST" 
+		commandName="contato" enctype="multipart/form-data">
 		<div>
 			<label>Nome</label>
 			<form:input path="nome"/>
@@ -21,6 +22,10 @@
 			<label>e-mail</label>
 			<form:input path="email"/>
 			<form:errors path="email"/>
+		</div>
+		<div>
+			<label>Foto</label>
+			<input name="foto" type="file"/>
 		</div>
 		<button type="submit">Cadastrar</button>
 	</form:form>
