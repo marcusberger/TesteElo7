@@ -65,5 +65,16 @@ public class ContatosController {
 		
 		return modelAndView;
 	}
+	
+	@RequestMapping("/detalheContatos")
+	public ModelAndView detalheContatos(Integer id){
+		ModelAndView modelAndView = new ModelAndView("contatos/detalheContatos");
+		Contato contato = contatoDao.find(id);
+		modelAndView.addObject("contato", contato);
+		System.out.println("ID = " + id);
+		return modelAndView;
+		
+	}
+
 
 }

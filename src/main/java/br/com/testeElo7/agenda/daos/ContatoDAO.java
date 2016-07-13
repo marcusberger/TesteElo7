@@ -27,4 +27,8 @@ public class ContatoDAO {
 				.getResultList();
 	}
 
+	public Contato find(Integer id) {
+		return manager.find(Contato.class, id);
+	}
+
 }
