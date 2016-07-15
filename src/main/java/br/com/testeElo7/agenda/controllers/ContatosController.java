@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
@@ -66,12 +67,11 @@ public class ContatosController {
 		return modelAndView;
 	}
 	
-	@RequestMapping("/detalheContatos")
-	public ModelAndView detalheContatos(Integer id){
+	@RequestMapping("/detalheContatos/{id}")
+	public ModelAndView detalheContatos(@PathVariable("id") Integer id){
 		ModelAndView modelAndView = new ModelAndView("contatos/detalheContatos");
 		Contato contato = contatoDao.find(id);
 		modelAndView.addObject("contato", contato);
-		System.out.println("ID = " + id);
 		return modelAndView;
 		
 	}
