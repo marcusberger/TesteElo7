@@ -1,26 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset= "UTF-8">
 <title>Agenda</title>
 </head>
 <body>
-	<h1>Agenda - TESTE</h1>
-	<table>
-		<tr>
-			<td>Contato1</td>
-		</tr>
-		<tr>
-			<td>Contato2</td>
-		</tr>
-		<tr>
-			<td>Contato3</td>
-		</tr>
-		<tr>
-			<td>Contato4</td>
-		</tr>
+
+	<h1>Agenda</h1>
+	
+		<table>
+			<tr>
+				<td><a href="<c:url value='/contatos/listar/${contato.id}'/>" >Listar Contatos</a></td>
+			</tr>
 	</table>
 
 </body>

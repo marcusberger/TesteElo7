@@ -9,7 +9,11 @@
 <head>
 <meta charset= "UTF-8">
 <title>Agenda</title>
-</head>
+
+<!-- <c:url value="resources/css" var="cssPath"/> -->
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
+<script src="resources/js/bootstrap.min.js"></script> 
 <body>
 	<form:form action= "${s:mvcUrl('CC#gravar').build()}" method="POST" 
 		commandName="contato" enctype="multipart/form-data">

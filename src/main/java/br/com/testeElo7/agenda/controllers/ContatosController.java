@@ -75,6 +75,11 @@ public class ContatosController {
 		return modelAndView;
 		
 	}
-
+	
+	@RequestMapping("remove/{id}")
+	   public String remove(@PathVariable("id") Integer id) {
+		contatoDao.remove(id);
+		return "redirect:/contatos";
+	}
 
 }

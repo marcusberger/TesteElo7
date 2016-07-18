@@ -2,6 +2,7 @@ package br.com.testeElo7.agenda.daos;
 
 import java.util.List;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -31,4 +32,13 @@ public class ContatoDAO {
 		return manager.find(Contato.class, id);
 	}
 
+	public void remove(Integer id) {
+		manager.remove(manager.find(Contato.class, id));
+		
+	}
+
+
+	
 }
+
+
