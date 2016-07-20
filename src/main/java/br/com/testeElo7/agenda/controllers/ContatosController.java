@@ -81,5 +81,18 @@ public class ContatosController {
 		contatoDao.remove(id);
 		return "redirect:/contatos";
 	}
+	
+	@RequestMapping("editar/{id}")
+	public ModelAndView editar(@PathVariable("id") Integer id) {
+		Contato contato = contatoDao.find(id);
+		return new ModelAndView("contatos/editar", "contato", contato);
+	}
+	
+	@RequestMapping("editar")
+	public String grava(Contato contato) {
+		contatoDao.gravar(contato);
+		return "redirect:/contatos";
+	}
+
 
 }

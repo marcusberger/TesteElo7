@@ -31,7 +31,7 @@
 				
 				</td>
 				<td><a href="<c:url value='/contatos/remove/${contato.id}'/>" >Remover</a></td>
-				<td><a href="editarContato/${contato.id}">Editar</a></td>
+				<td><a href="<c:url value='/contatos/editar/${contato.id}'/>">Editar</a></td>
 			</tr>
 		</c:forEach>
 		
