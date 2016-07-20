@@ -82,17 +82,17 @@ public class ContatosController {
 		return "redirect:/contatos";
 	}
 	
-	@RequestMapping("editar/{id}")
-	public ModelAndView editar(@PathVariable("id") Integer id) {
+	@RequestMapping(value = "/editar/{id}", method = RequestMethod.GET)
+	public ModelAndView editar(@PathVariable Integer id) {
 		Contato contato = contatoDao.find(id);
 		return new ModelAndView("contatos/editar", "contato", contato);
 	}
-	
-	@RequestMapping("editar")
-	public String grava(Contato contato) {
-		contatoDao.gravar(contato);
+
+	@RequestMapping(value = "/editar", method=RequestMethod.POST)
+	public String editar(Contato contato) {
+		contatoDao.atualiza(contato);
 		return "redirect:/contatos";
-	}
+}
 
 
 }

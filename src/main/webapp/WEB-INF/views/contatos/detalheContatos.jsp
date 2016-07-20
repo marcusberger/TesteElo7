@@ -9,10 +9,9 @@
 </head>
 <body>
 
-	<h1>Lista de Contatos</h1>
+	<h1>Dados do ${contato.nome}</h1>
 	
 	<div>${sucesso }</div>
-	
 	<table>
 		<tr>
 			<td>foto</td>

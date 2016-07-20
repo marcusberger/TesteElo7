@@ -17,7 +17,8 @@ public class ContatoValidation implements Validator{
 	public void validate(Object target, Errors errors) {
 		ValidationUtils.rejectIfEmpty(errors, "nome", "field.requeried");
 		ValidationUtils.rejectIfEmpty(errors, "email", "field.requeried");
-		
 	}
+	
+	
 	
 }

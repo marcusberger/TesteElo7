@@ -18,10 +18,13 @@ public class ContatoDAO {
 	@PersistenceContext
 	private EntityManager manager;
 	
+	
+
 	public void gravar(Contato contato){
-		manager.persist(contato);
+			manager.persist(contato);
 		
 	}
+	
 
 	public List<Contato> listar() {
 		return manager.createQuery("select p from Contato p", Contato.class)
@@ -34,6 +37,12 @@ public class ContatoDAO {
 
 	public void remove(Integer id) {
 		manager.remove(manager.find(Contato.class, id));
+		
+	}
+
+
+	public void atualiza(Contato contato) {
+		manager.merge(contato);
 		
 	}
 

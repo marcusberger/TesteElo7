@@ -14,13 +14,13 @@
 <body>
 	<h3>Editar Contato</h3>
 	
-	<form:form action="contatos/editar" method="put" commandName="contato">
-		<form:hidden path="id"/>
+	<form:form action="../editar" method="put" commandName="contato">
+		<form:hidden path="id" />
 		<table>
 			<tr>
 				<td>Nome: <form:input path="nome" /></td>
 				<td>E-mail: <form:input path="email" /></td>
-				<button type="submit">Cadastrar</button>
+				<td><input type="submit"></td>
 			</tr>
 		</table>
 	</form:form>
