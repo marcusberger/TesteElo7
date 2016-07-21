@@ -14,7 +14,7 @@
 	
 		<table>
 			<tr>
-				<td><a href="<c:url value='/contatos/listar/${contato.id}'/>" >Listar Contatos</a></td>
+				<div><a button type="button" class="btn btn-primary btn-xs" href="<c:url value='/contatos'/>">Adicionar</a></div>
 			</tr>
 	</table>
 

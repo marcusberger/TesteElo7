@@ -40,7 +40,6 @@ public class ContatoDAO {
 		
 	}
 
-
 	public void atualiza(Contato contato) {
 		manager.merge(contato);
 		

@@ -11,11 +11,15 @@
 <head>
 	<title>Agenda</title>
 	
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
+	<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
 </head>
 <body>
-	<h3>Editar Contato</h3>
+	<h3 align="center">Editar Contato</h3>
 	
+	
+<div class="panel panel-primary">
+  <div class="panel-body">
 	<form:form action="../editar" method="put" commandName="contato">
 		<form:hidden path="id" />
 		<table>
@@ -26,5 +30,7 @@
 			</tr>
 		</table>
 	</form:form>
+	</div>
+	</div>
 </body>
 </html>

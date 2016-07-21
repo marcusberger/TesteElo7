@@ -1,0 +1,49 @@
+    
+ 
+    /* " Para o input */
+    .input-search{
+        border:1px solid #CCC;
+        padding:5px 14px;
+        font-size:12px;
+        margin:10px 0;
+ 
+        -webkit-border-radius:15px;
+           -moz-border-radius:15px;
+            -ms-border-radius:15px;
+             -o-border-radius:15px;
+                border-radius:15px;
+    }
+        .input-search::-webkit-input-placeholder{ font-style:italic }
+        .input-search:-moz-placeholder          { font-style:italic }
+        .input-search:-ms-input-placeholder     { font-style:italic }
+ 
+    /* " Para a tabela */
+    table.lista-contatos{
+        font-size:15px;
+        width:100%;
+        font-family:Tahoma, Geneva, sans-serif;
+    }
+     table.lista-contatos th{
+        border-bottom: 1px solid;
+        padding:1%;
+        width:45%; 
+        background:#ffffff;
+           
+    }
+     table.lista-contatos td{
+        border-bottom: 1px solid;
+        padding:1px;
+        width:45%;
+            
+    }    
+    
+    a:link, a:visited {
+	text-decoration: none
+	}
+a:hover {
+	text-decoration: none
+	color: #000000
+	}
+a:active {
+	text-decoration: none
+	}
