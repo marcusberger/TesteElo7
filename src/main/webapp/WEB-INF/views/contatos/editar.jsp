@@ -10,6 +10,8 @@
 
 <head>
 	<title>Agenda</title>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" ></script>
 </head>
 <body>
 	<h3>Editar Contato</h3>

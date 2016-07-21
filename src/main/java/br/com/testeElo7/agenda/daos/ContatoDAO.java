@@ -30,7 +30,7 @@ public class ContatoDAO {
 		return manager.createQuery("select p from Contato p", Contato.class)
 				.getResultList();
 	}
-
+	
 	public Contato find(Integer id) {
 		return manager.find(Contato.class, id);
 	}
@@ -45,7 +45,6 @@ public class ContatoDAO {
 		manager.merge(contato);
 		
 	}
-
 		
 }
 

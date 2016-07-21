@@ -54,7 +54,7 @@ public class ContatosController {
 		contato.setFotoPath(path);
 		
 		contatoDao.gravar(contato);
-		redirectAttributes.addFlashAttribute("message", "Contato cadastrado com sucesso!!");
+		redirectAttributes.addFlashAttribute("sucesso", "Contato cadastrado com sucesso!!");
 		return new ModelAndView("redirect:contatos");
 	}
 	
@@ -86,13 +86,13 @@ public class ContatosController {
 	public ModelAndView editar(@PathVariable Integer id) {
 		Contato contato = contatoDao.find(id);
 		return new ModelAndView("contatos/editar", "contato", contato);
+		
 	}
 
 	@RequestMapping(value = "/editar", method=RequestMethod.POST)
 	public String editar(Contato contato) {
 		contatoDao.atualiza(contato);
 		return "redirect:/contatos";
-}
-
-
+	}
+	
 }

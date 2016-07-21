@@ -1,0 +1,12 @@
+.alinhadoEsquerda {
+	text-align:left;
+}
+.alinhadoCentro {
+	text-align:center;
+}
+.alinhadoDireita {
+	text-align:right;
+}
+.noBorder {
+	border="0"
+} 
