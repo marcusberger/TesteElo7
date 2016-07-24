@@ -14,13 +14,11 @@
 	<div>${sucesso }</div>
 	<table>
 		<tr>
-			<td>foto</td>
 			<td>Id</td>
 			<td>Nome</td>
 			<td>e-mail</td>
 		</tr>
 			<tr>
-				<td>${fotoPath}</td>
 				<td>${contato.id}</td>
 				<td>${contato.nome}</td>
 				<td>${contato.email}</td>

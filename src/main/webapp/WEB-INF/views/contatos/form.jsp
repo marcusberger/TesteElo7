@@ -19,7 +19,7 @@
 	<h1 align ="center">Adicionar Contato</h1>
 	
   		
-		<form:form action="${s:mvcUrl('CC#gravar').build()}" method="POST" commandName="contato" enctype="multipart/form-data">
+		<form:form action="${s:mvcUrl('CC#gravar').build()}" method="POST" commandName="contato">
 		
 		
 		<div class="input-group input-group-sm">
@@ -32,10 +32,6 @@
 			<label>e-mail</label>
 			<form:input path="email"/>
 			<form:errors path="email"/>
-		</div>
-		<div>
-			<label>Foto</label>
-			<input name="foto" type="file"/>
 		</div>
 		<button type="submit">Cadastrar</button>
 	</div>
