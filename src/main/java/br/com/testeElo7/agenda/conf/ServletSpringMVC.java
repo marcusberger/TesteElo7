@@ -14,11 +14,14 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 		return null;
 	}
 
+	/*Retorna classes de configurações*/
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		return new Class[] {AppWebConfiguration.class, JPAConfiguration.class};
 	}
 
+	
+	/*Pegando servet do spring e mapeando todas as url do "/" em diante*/
 	@Override
 	protected String[] getServletMappings() {
 		

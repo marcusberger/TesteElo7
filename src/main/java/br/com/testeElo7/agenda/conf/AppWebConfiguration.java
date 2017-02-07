@@ -12,8 +12,8 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import br.com.testeElo7.agenda.controllers.HomeController;
 import br.com.testeElo7.agenda.daos.ContatoDAO;
 
-@EnableWebMvc
-@ComponentScan(basePackageClasses={HomeController.class, ContatoDAO.class})
+@EnableWebMvc /*Falando parao Spring que queremos usar o WebMvc do Spring*/
+@ComponentScan(basePackageClasses={HomeController.class, ContatoDAO.class})/*Falando para o spring onde ele encontra os controlers*/
 public class AppWebConfiguration extends WebMvcConfigurerAdapter{
 	
 	@Bean
